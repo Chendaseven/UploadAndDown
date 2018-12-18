@@ -12,4 +12,6 @@ public interface fileListService {
 	public List<fileBean> findByimage(String type);
 	//文件上传
 	public void uploadFile(fileBean filebean);
+	//根据id查询文件对象
+	public fileBean findByID(Integer id);
 }

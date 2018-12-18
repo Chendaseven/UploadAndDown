@@ -24,10 +24,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<!-- 向数据库添加文件上传字段 -->
+<!-- 	考虑使用一条语句同时插入所有上传文件的信息 -->
 	<insert id="uploadFile" parameterType="cqupt.chen.pojo.fileBean">
 		insert into file_list (name,size,type,addtime,file_path,info) values 
 		(#{name},#{size},#{type},#{addtime},#{file_path},#{info})
-	
+
 	</insert>
+	
+<!-- 	根据id查询file对象 -->
+	<select id="findById" parameterType="cqupt.chen.pojo.fileBean" resultType="cqupt.chen.pojo.fileBean">
+		select * from file_list where id = #{id}
+	</select>
 	
 </mapper>

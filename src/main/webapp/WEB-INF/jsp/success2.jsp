@@ -59,15 +59,15 @@
         <th>类型</th>
         <th>上传时间</th>
       </tr>
-      <c:forEach items="${fileList}" var="bean" varStatus="varSta">
+
       <tr>
-        <td>${varSta.count }</td>
-        <td>${bean.name }</td>
-        <td>${bean.size }</td>
-        <td>${bean.type }</td>
-        <td>${bean.addtime }</td>
+        <td>1</td>
+        <td>${filebean.name }</td>
+        <td>${filebean.size }</td>
+        <td>${filebean.type }</td>
+        <td>${filebean.addtime }</td>
       </tr>
-      </c:forEach>
+
     </table>
     </div>
   </body>

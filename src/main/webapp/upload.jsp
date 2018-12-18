@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" pageEncoding="utf-8"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -60,7 +60,11 @@ td{
     			<tbody>
     			<tr>
     				<th>请选择文件</th>
-    				<td><input type="file" name="attachment"/><input type="text" name="info1"/><input type="button" value="删除" onclick="delItem(this)"/></td>
+    				<td>
+    					<input type="file" name="attachment"/>
+    					<input type="text" name="info1"/>
+    					<input type="button" value="删除" onclick="delItem(this)"/>
+    				</td>
     			</tr>
     			</tbody>
     			<tr>

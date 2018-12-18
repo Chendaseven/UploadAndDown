@@ -36,6 +36,12 @@ public class fileListServiceImpl implements fileListService {
 	public void uploadFile(fileBean filebean) {
 		filelistmapper.uploadFile(filebean);
 	}
+
+	@Override
+	public fileBean findByID(Integer id) {
+		fileBean filebean = filelistmapper.findById(id);
+		return filebean;
+	}
 	
 
 }

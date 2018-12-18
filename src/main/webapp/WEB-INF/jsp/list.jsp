@@ -76,7 +76,6 @@
   <div id="sidebar">
     <ul>
       <li>
-        
         <a href="upload.jsp">上传</a></li>
       <li>
         
